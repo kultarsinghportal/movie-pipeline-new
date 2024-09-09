@@ -1,0 +1,304 @@
+://packages.cloud.google.com/apt kubernetes-xenial Release                                       
+  404  Not Found [IP: 108.177.121.102 443]
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease                                             
+Get:4 https://cli.github.com/packages stable InRelease [3917 B]                                             
+Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease                                           
+Err:4 https://cli.github.com/packages stable InRelease                                                      
+  The following signatures were invalid: EXPKEYSIG 23F3D4EA75716059 GitHub CLI <opensource+cli@github.com>
+Hit:6 http://archive.ubuntu.com/ubuntu bionic InRelease                 
+Hit:7 http://archive.ubuntu.com/ubuntu bionic-updates InRelease         
+Hit:8 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic InRelease   
+Hit:9 http://archive.ubuntu.com/ubuntu bionic-backports InRelease       
+Reading package lists... Done                     
+E: The repository 'https://apt.kubernetes.io kubernetes-xenial Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures were invalid: EXPKEYSIG 23F3D4EA75716059 GitHub CLI <opensource+cli@github.com>
+E: The repository 'https://cli.github.com/packages stable InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+backend root$ sudo install python
+install: missing destination file operand after 'python'
+Try 'install --help' for more information.
+backend root$ sudo apt install python
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python-minimal python2.7 python2.7-minimal
+Suggested packages:
+  python-doc python-tk python2.7-doc binutils binfmt-support
+The following NEW packages will be installed:
+  libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python python-minimal python2.7
+  python2.7-minimal
+0 upgraded, 7 newly installed, 0 to remove and 121 not upgraded.
+Need to get 3972 kB of archives.
+After this operation, 16.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython2.7-minimal amd64 2.7.17-1~18.04ubuntu1.11 [335 kB]
+Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 python2.7-minimal amd64 2.7.17-1~18.04ubuntu1.11 [1294 kB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic/main amd64 python-minimal amd64 2.7.15~rc1-1 [28.1 kB]
+Get:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython2.7-stdlib amd64 2.7.17-1~18.04ubuntu1.11 [1919 kB]
+Get:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 python2.7 amd64 2.7.17-1~18.04ubuntu1.11 [248 kB]
+Get:6 http://archive.ubuntu.com/ubuntu bionic/main amd64 libpython-stdlib amd64 2.7.15~rc1-1 [7620 B]
+Get:7 http://archive.ubuntu.com/ubuntu bionic/main amd64 python amd64 2.7.15~rc1-1 [140 kB]
+Fetched 3972 kB in 1s (7381 kB/s)
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+        LANGUAGE = (unset),
+        LC_ALL = (unset),
+        LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... 28228 files and directories currently installed.)
+Preparing to unpack .../0-libpython2.7-minimal_2.7.17-1~18.04ubuntu1.11_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.17-1~18.04ubuntu1.11) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../1-python2.7-minimal_2.7.17-1~18.04ubuntu1.11_amd64.deb ...
+Unpacking python2.7-minimal (2.7.17-1~18.04ubuntu1.11) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../2-python-minimal_2.7.15~rc1-1_amd64.deb ...
+Unpacking python-minimal (2.7.15~rc1-1) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../3-libpython2.7-stdlib_2.7.17-1~18.04ubuntu1.11_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.17-1~18.04ubuntu1.11) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../4-python2.7_2.7.17-1~18.04ubuntu1.11_amd64.deb ...
+Unpacking python2.7 (2.7.17-1~18.04ubuntu1.11) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../5-libpython-stdlib_2.7.15~rc1-1_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.15~rc1-1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.17-1~18.04ubuntu1.11) ...
+Setting up python2.7-minimal (2.7.17-1~18.04ubuntu1.11) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.15~rc1-1) ...
+Selecting previously unselected package python.
+(Reading database ... 28977 files and directories currently installed.)
+Preparing to unpack .../python_2.7.15~rc1-1_amd64.deb ...
+Unpacking python (2.7.15~rc1-1) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.17-1~18.04ubuntu1.11) ...
+Setting up python2.7 (2.7.17-1~18.04ubuntu1.11) ...
+Setting up libpython-stdlib:amd64 (2.7.15~rc1-1) ...
+Setting up python (2.7.15~rc1-1) ...
+Processing triggers for mime-support (3.60ubuntu1) ...
+backend root$ python version
+python3.8: can't open file 'version': [Errno 2] No such file or directory
+backend root$ python --version
+Python 3.8.0
+backend root$ sudo apt install pythonn3.10
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package pythonn3.10
+E: Couldn't find any package by glob 'pythonn3.10'
+E: Couldn't find any package by regex 'pythonn3.10'
+backend root$ sudo apt install python3.10
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'postgresql-plpython3-10' for regex 'python3.10'
+postgresql-plpython3-10 is already the newest version (10.23-0ubuntu0.18.04.2).
+0 upgraded, 0 newly installed, 0 to remove and 121 not upgraded.
+backend root$ python --version
+Python 3.8.0
+backend root$ python3.10 version
+bash: python3.10: command not found
+backend root$ python3.10 --version
+bash: python3.10: command not found
+backend root$ pipenv install
+Warning: Python 3.10 was not found on your system...
+Neither 'pyenv' nor 'asdf' could be found to install Python.
+You can specify specific versions of Python with:
+$ pipenv --python path/to/python
+backend root$ sudo add-apt-repository ppa:deadsnakes/ppa
+ This PPA contains more recent Python versions packaged for Ubuntu.
+
+Disclaimer: there's no guarantee of timely updates in case of security problems or other issues. If you want to use them in a security-or-otherwise-critical environment (say, on a production server), you do so at your own risk.
+
+Update Note
+===========
+Please use this repository instead of ppa:fkrull/deadsnakes.
+
+Reporting Issues
+================
+
+Issues can be reported in the master issue tracker at:
+https://github.com/deadsnakes/issues/issues
+
+Supported Ubuntu and Python Versions
+====================================
+
+- Ubuntu 20.04 (focal) Python3.5 - Python3.7, Python3.9 - Python3.13
+- Ubuntu 22.04 (jammy) Python3.7 - Python3.9, Python3.11 - Python3.13
+- Ubuntu 24.04 (noble) Python3.7 - Python3.11, Python3.13
+- Note: Python2.7 (focal, jammy), Python 3.8 (focal), Python 3.10 (jammy), Python3.12 (noble) are not provided by deadsnakes as upstream ubuntu provides those packages.
+
+Why some packages aren't built:
+- Note: for focal, older python versions require libssl<1.1 so they are not currently built
+- Note: for jammy and noble, older python versions requre libssl<3 so they are not currently built
+- If you need these, reach out to asottile to set up a private ppa
+
+The packages may also work on other versions of Ubuntu or Debian, but that is not tested or supported.
+
+Packages
+========
+
+The packages provided here are loosely based on the debian upstream packages with some modifications to make them more usable as non-default pythons and on ubuntu.  As such, the packages follow debian's patterns and often do not include a full python distribution with just `apt install python#.#`.  Here is a list of packages that may be useful along with the default install:
+
+- `python#.#-dev`: includes development headers for building C extensions
+- `python#.#-venv`: provides the standard library `venv` module
+- `python#.#-distutils`: provides the standard library `distutils` module
+- `python#.#-lib2to3`: provides the `2to3-#.#` utility as well as the standard library `lib2to3` module
+- `python#.#-gdbm`: provides the standard library `dbm.gnu` module
+- `python#.#-tk`: provides the standard library `tkinter` module
+
+Third-Party Python Modules
+==========================
+
+Python modules in the official Ubuntu repositories are packaged to work with the Python interpreters from the official repositories. Accordingly, they generally won't work with the Python interpreters from this PPA. As an exception, pure-Python modules for Python 3 will work, but any compiled extension modules won't.
+
+To install 3rd-party Python modules, you should use the common Python packaging tools.  For an introduction into the Python packaging ecosystem and its tools, refer to the Python Packaging User Guide:
+https://packaging.python.org/installing/
+
+Sources
+=======
+The package sources are available at:
+https://github.com/deadsnakes/
+
+Nightly Builds
+==============
+
+For nightly builds, see ppa:deadsnakes/nightly https://launchpad.net/~deadsnakes/+archive/ubuntu/nightly
+ More info: https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+^C
+
+backend root$ sudo add-apt-repository ppa:deadsnakes/ppa
+ This PPA contains more recent Python versions packaged for Ubuntu.
+
+Disclaimer: there's no guarantee of timely updates in case of security problems or other issues. If you want to use them in a security-or-otherwise-critical environment (say, on a production server), you do so at your own risk.
+
+Update Note
+===========
+Please use this repository instead of ppa:fkrull/deadsnakes.
+
+Reporting Issues
+================
+
+Issues can be reported in the master issue tracker at:
+https://github.com/deadsnakes/issues/issues
+
+Supported Ubuntu and Python Versions
+====================================
+
+- Ubuntu 20.04 (focal) Python3.5 - Python3.7, Python3.9 - Python3.13
+- Ubuntu 22.04 (jammy) Python3.7 - Python3.9, Python3.11 - Python3.13
+- Ubuntu 24.04 (noble) Python3.7 - Python3.11, Python3.13
+- Note: Python2.7 (focal, jammy), Python 3.8 (focal), Python 3.10 (jammy), Python3.12 (noble) are not provided by deadsnakes as upstream ubuntu provides those packages.
+
+Why some packages aren't built:
+- Note: for focal, older python versions require libssl<1.1 so they are not currently built
+- Note: for jammy and noble, older python versions requre libssl<3 so they are not currently built
+- If you need these, reach out to asottile to set up a private ppa
+
+The packages may also work on other versions of Ubuntu or Debian, but that is not tested or supported.
+
+Packages
+========
+
+The packages provided here are loosely based on the debian upstream packages with some modifications to make them more usable as non-default pythons and on ubuntu.  As such, the packages follow debian's patterns and often do not include a full python distribution with just `apt install python#.#`.  Here is a list of packages that may be useful along with the default install:
+
+- `python#.#-dev`: includes development headers for building C extensions
+- `python#.#-venv`: provides the standard library `venv` module
+- `python#.#-distutils`: provides the standard library `distutils` module
+- `python#.#-lib2to3`: provides the `2to3-#.#` utility as well as the standard library `lib2to3` module
+- `python#.#-gdbm`: provides the standard library `dbm.gnu` module
+- `python#.#-tk`: provides the standard library `tkinter` module
+
+Third-Party Python Modules
+==========================
+
+Python modules in the official Ubuntu repositories are packaged to work with the Python interpreters from the official repositories. Accordingly, they generally won't work with the Python interpreters from this PPA. As an exception, pure-Python modules for Python 3 will work, but any compiled extension modules won't.
+
+To install 3rd-party Python modules, you should use the common Python packaging tools.  For an introduction into the Python packaging ecosystem and its tools, refer to the Python Packaging User Guide:
+https://packaging.python.org/installing/
+
+Sources
+=======
+The package sources are available at:
+https://github.com/deadsnakes/
+
+Nightly Builds
+==============
+
+For nightly builds, see ppa:deadsnakes/nightly https://launchpad.net/~deadsnakes/+archive/ubuntu/nightly
+ More info: https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease                                             
+Get:4 https://cli.github.com/packages stable InRelease [3917 B]                                             
+Ign:2 https://packages.cloud.google.com/apt kubernetes-xenial InRelease                                     
+Err:5 https://packages.cloud.google.com/apt kubernetes-xenial Release                                       
+  404  Not Found [IP: 64.233.181.113 443]
+Hit:6 http://archive.ubuntu.com/ubuntu bionic InRelease                                                     
+Hit:7 http://archive.ubuntu.com/ubuntu bionic-updates InRelease          
+Hit:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease        
+Err:4 https://cli.github.com/packages stable InRelease                  
+  The following signatures were invalid: EXPKEYSIG 23F3D4EA75716059 GitHub CLI <opensource+cli@github.com>
+Hit:9 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic InRelease
+Reading package lists... Done                     
+E: The repository 'https://apt.kubernetes.io kubernetes-xenial Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures were invalid: EXPKEYSIG 23F3D4EA75716059 GitHub CLI <opensource+cli@github.com>
+E: The repository 'https://cli.github.com/packages stable InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+backend root$ sudo rm /etc/apt/sources.list.d/kubernetes.list
+backend root$ sudo rm /etc/apt/sources/list.d/gitgub-cli.list
+rm: cannot remove '/etc/apt/sources/list.d/gitgub-cli.list': No such file or directory
+backend root$ sudo rm /etc/apt/sources.list.d/gitgub-cli.list
+rm: cannot remove '/etc/apt/sources.list.d/gitgub-cli.list': No such file or directory
+backend root$ sudo rm /etc/apt/sources.list.d/gitgub-cli.list
+rm: cannot remove '/etc/apt/sources.list.d/gitgub-cli.list': No such file or directory
+backend root$ sudo apt update
+Get:1 https://cli.github.com/packages stable InRelease [3917 B]
+Hit:2 https://download.docker.com/linux/ubuntu bionic InRelease                                             
+Err:1 https://cli.github.com/packages stable InRelease                                                      
+  The following signatures were invalid: EXPKEYSIG 23F3D4EA75716059 GitHub CLI <opensource+cli@github.com>
+Hit:3 http://security.ubuntu.com/ubuntu bionic-security InRelease                                           
+Hit:4 http://archive.ubuntu.com/ubuntu bionic InRelease                                                     
+Hit:5 http://archive.ubuntu.com/ubuntu bionic-updates InRelease                                       
+Hit:6 http://archive.ubuntu.com/ubuntu bionic-backports InRelease               
+Hit:7 http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic InRelease   
+Reading package lists... Done                     
+W: GPG error: https://cli.github.com/packages stable InRelease: The following signatures were invalid: EXPKEYSIG 23F3D4EA75716059 GitHub CLI <opensource+cli@github.com>
+E: The repository 'https://cli.github.com/packages stable InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+backend root$ sudo apt install python3.10 python3.10-venv python3.10-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'postgresql-plpython3-10' for regex 'python3.10'
+E: Unable to locate package python3.10-venv
+E: Couldn't find any package by glob 'python3.10-venv'
+E: Couldn't find any package by regex 'python3.10-venv'
+E: Unable to locate package python3.10-dev
+E: Couldn't find any package by glob 'python3.10-dev'
+E: Couldn't find any package by regex 'python3.10-dev'
+backend root$ python --version
+Python 3.8.0
+backend root$ Python3.10 version
+bash: Python3.10: command not found
+backend root$ sudo apt install python3.10
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'postgresql-plpython3-10' for regex 'python3.10'
+postgresql-plpython3-10 is already the newest version (10.23-0ubuntu0.18.04.2).
+0 upgraded, 0 newly installed, 0 to remove and 121 not upgraded.
+backend root$ 
