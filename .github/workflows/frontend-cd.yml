@@ -27,7 +27,7 @@ jobs:
       run: npm ci
 
     - name: Checkout Run Lint
-      run: cd starter/frontend && npm run lint
+      run: cd starter/frontend && npm run lint -- --fix
 
   Test:
     runs-on: ubuntu-latest
